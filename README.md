@@ -2,7 +2,7 @@
 
 - Launch main.py without command line parameter --> using default value for NUMBER_OF_CASES (10 000)
 - Launch main.py with one command line parameter --> if is an int, override NUMBER_OF_CASES, else use its default value (10 000)
-
+- .
 - The file main.py generates all .c files for each use cases.
 - The use cases must be launched from command line with an integer argument provided as the data to find, if it exists in the generated dataset.
 - The dataset is generated based on the variable NUMBER_OF_CASES in main.py.
