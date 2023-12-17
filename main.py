@@ -5,6 +5,7 @@
 #   - switch/cases
 #
 
+import sys
 from random import shuffle
 
 # Number of if/if/if/... - if/else if/else - switch/cases to benchmark
@@ -231,13 +232,24 @@ def generate_use_case_4():
 
 
 def main():
-    print("Start file generation...")
+    print("... Start file generation.")
     generate_use_case_1()
     generate_use_case_2()
     generate_use_case_3()
     generate_use_case_4()
-    print("Generation has finished.")
+    print("... Generation has finished.")
 
 
 if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        arg = sys.argv[1]
+        if arg.isdigit():
+            NUMBER_OF_CASES = int(arg)
+            print("... Override NUMBER_OF_CASES status : OK.\n    New value is :" + str(NUMBER_OF_CASES))
+        else:
+            print("(!) ERROR ! NUMBER_OF_CASES cannot be overriden.\n    Value received is not an int : " + str(arg))
+            print("(!) Using default value for NUMBER_OF_CASES, value is : " + str(NUMBER_OF_CASES))
+    else:
+        print("... Using default value for NUMBER_OF_CASES, value is : " + str(NUMBER_OF_CASES))
+
     main()
