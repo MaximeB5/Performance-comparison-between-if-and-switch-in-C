@@ -21,8 +21,10 @@
 
 - Unix : use time command, e.g. time ./a.out
 - Other OS : add time.h dependency in .c files such as :
+  ```
   clock_t begin = clock();
   /* the generated code */
   clock_t end = clock();
   double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
   printf("time spent is %f", time_spent);
+  ```
