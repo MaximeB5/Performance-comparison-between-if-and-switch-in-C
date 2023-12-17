@@ -6,8 +6,6 @@
 - Use cases are independent. Their dataset may vary : the use case 1 uses from 0 to NUMBER_OF_CASES, but the use case 4 uses from (-1 * (NUMBER_OF_CASES / 2)) to (NUMBER_OF_CASES/2)
 
 
-
-
 # Use cases available :
 
 - Use case 1 : from 0 to max value (only positive values)
