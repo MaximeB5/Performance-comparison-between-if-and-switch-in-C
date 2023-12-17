@@ -250,6 +250,6 @@ if __name__ == "__main__":
             print("(!) ERROR ! NUMBER_OF_CASES cannot be overriden.\n    Value received is not an int : " + str(arg))
             print("(!) Using default value for NUMBER_OF_CASES, value is : " + str(NUMBER_OF_CASES))
     else:
-        print("... Using default value for NUMBER_OF_CASES, value is : " + str(NUMBER_OF_CASES));;; sfsjdgv
+        print("... Using default value for NUMBER_OF_CASES, value is : " + str(NUMBER_OF_CASES))
 
     main()
