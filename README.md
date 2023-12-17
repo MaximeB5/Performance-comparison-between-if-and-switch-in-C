@@ -15,3 +15,14 @@
 - Use case 2 : from max value to 0 (only positive values)
 - Use case 3 : mix with all possible values (only positive values, including 0, but not starting at 0)
 - Use case 4 : mix with all possible values, including negative values (first value is a negative one, and the second is a positive, all others are random values)
+
+
+# Benchmarking :
+
+- Unix : use time command, e.g. time ./a.out
+- Other OS : add time.h dependency in .c files such as :
+  clock_t begin = clock();
+  /* the generated code */
+  clock_t end = clock();
+  double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+  printf("time spent is %f", time_spent);
