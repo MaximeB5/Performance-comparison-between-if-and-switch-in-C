@@ -1,3 +1,5 @@
+![Build Status](https://github.com/MaximeB5/Performance-comparison-between-if-and-switch-in-C/actions/workflows/python-app.yml/badge.svg)
+
 # Performance-comparison-between-if-and-switch-in-C
 
 - Launch main.py without command line parameter --> using default value for NUMBER_OF_CASES (10 000)
